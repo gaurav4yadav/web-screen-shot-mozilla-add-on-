@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Screenshot</title>
+  </head>
+  <body
+    style="
+      border-style: solid;
+      border-color: lightgray;
+      border-width: 2px;
+      margin: 15px;
+      padding: 30px;
+      border-bottom-left-radius: 10%;
+      border-top-right-radius: 10%;
+    "
+  >
+  <style>
+      .loader_div{
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  left: 0;
+  right: 0%;
+  z-index: 99;
+  opacity:0.7;
+  display:none;
+  background: lightgrey url('loader.gif') center center no-repeat;
+}
+  </style>
+    <h2>Web Screenshot</h2>
+    <img src="web.jfif" style="border: 5px solid rgb(0, 0, 0)" />
+
+    <p style="color: lightblue">
+      Help : "Paste the url of the webpage which you want to take screeen shot."
+    </p>
+    <div id="loader_div" class="loader_div"></div>
+    <section
+      style="
+        border: 1px solid rgb(231, 231, 231);
+        padding: 10px;
+        margin: 15px;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 10%;">
+      <input
+        type="text"
+        id="input"
+        placeholder="paste URL here:"
+        style="padding: 10px; width: 250px"
+      />
+      <p></p>
+
+      <center>
+        <button
+          type="submit"
+          id="bt1"
+          style="
+            border-top-right-radius: 10%;
+            border-bottom-left-radius: 10%;
+            padding: 10px;
+            background-color: rgb(126, 184, 79);
+            color: white;
+          "
+        >
+          Take Screenshot
+        </button>
+      </center>
+    </section>
+
+    <p style="color: lightgray">
+      Note : Website with recaptcha enabled , not supported
+    </p>
+    <script src="java.js"></script>
+  </body>
+</html>
